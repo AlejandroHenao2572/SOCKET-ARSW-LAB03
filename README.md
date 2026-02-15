@@ -152,4 +152,25 @@ En `FunServer.java`:
 private static final int PORT = 35000;  // Cambiar puerto
 ```
 
-##
+### Descripcion del Ejercicio 4.4
+Implementacion de un servidor HTTP básico en Java usando sockets.  
+El servidor escucha conexiones en un puerto específico, recibe una solicitud HTTP desde un navegador y responde enviando una página HTML sencilla.
+
+## ¿Qué hace el código?
+
+En `HttpServer.java`:
+
+1. Abre un puerto (35000) en la máquina local.
+2. Espera a que un cliente (por ejemplo, un navegador web) se conecte.
+3. Lee la solicitud HTTP enviada por el navegador.
+4. Muestra la solicitud en consola.
+5. Envía una respuesta HTML al cliente.
+6. Cierra la conexión.
+
+## Como conectarse al servidor desde el navegador
+
+1. Compila y ejecuta `HttpServer.java`.
+2. En la consola deberia de aparecer `Listo para recibir ...`
+3. Desde el navegador conectarse al servidor `http://localhost:35000`
+4. En la consola deberia de imprimir la informacion de la solicitud HTTP 
+![alt text](img/image.png)
