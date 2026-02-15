@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Servidor Web Pro - Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            border-bottom: 3px solid #4CAF50;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+        p {
+            line-height: 1.6;
+            color: #666;
+        }
+        ul {
+            background-color: #f9f9f9;
+            padding: 20px 40px;
+            border-left: 4px solid #4CAF50;
+        }
+        li {
+            margin: 10px 0;
+            color: #555;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background-color: #fafafa;
+            border-radius: 5px;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+        }
+        .nav-buttons {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .nav-buttons a {
+            display: inline-block;
+            padding: 12px 24px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .nav-buttons a:hover {
+            background-color: #45a049;
+            text-decoration: none;
+        }
+        .info-box {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2196F3;
+            margin: 20px 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido al Servidor Web Pro</h1>
+        
+        <p>Este es un servidor HTTP personalizado desarrollado en Java que soporta multiples solicitudes seguidas.</p>
+        
+        <div class="info-box">
+            <strong>Estado del servidor:</strong> Activo y funcionando correctamente en puerto 35000
+        </div>
+
+        <h2>Caracteristicas del Servidor</h2>
+        <ul>
+            <li>Soporte para multiples peticiones HTTP seguidas</li>
+            <li>Servir archivos HTML estaticos</li>
+            <li>Servir imagenes (JPG, PNG, GIF)</li>
+            <li>Servir archivos CSS y JavaScript</li>
+            <li>Manejo de errores 404 personalizados</li>
+            <li>Content-Type apropiado para cada tipo de archivo</li>
+        </ul>
+
+        <h2>Ejemplo de Imagen</h2>
+        <div class="image-container">
+            <p>Si tienes una imagen llamada <code>test.jpg</code> en la carpeta <code>www/</code>, se mostrara aqui:</p>
+            <img src="test.jpg" alt="Imagen de prueba" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <p style="display:none; color:#999;">Imagen no encontrada. Agrega un archivo test.jpg en la carpeta www/</p>
+        </div>
+    </div>
+</body>
+</html>
