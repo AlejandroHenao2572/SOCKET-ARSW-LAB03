@@ -1,5 +1,9 @@
 # SOCKET-ARSW-LAB03
 
+## Realizado por:
+- David Alejandro Patacon Henao
+- Daniel Felipe Hueso Rueda
+  
 ## Descripcion ejercicio 4.3.1
 Ejercicio basico de cliente-servidor con sockets en Java. El cliente envia un numero entero y el servidor responde con su cuadrado.
 
